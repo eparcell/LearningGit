@@ -1,0 +1,38 @@
+<?php
+/**
+ * Template Name: Features Landing NO VIDEO
+ *
+ * @package Gild Theme
+ */
+
+get_header(); ?>
+<nav class="sub-navigation" role="navigation">      
+  <?php wp_nav_menu( array( 'theme_location' => 'submenu-features', 'container' => '', 'depth' => '1', 'fallback_cb' => '' ) ); ?>
+</nav>
+  <div id="content" class="site-content" role="main">
+
+    <section class="hero-dark features-hero-1">
+      <div class="wrap clear">
+
+        <div class="features-caption">
+          <img class="gild-source-logo" src="<?php bloginfo('template_directory') ?>/img/gild-source.png" alt="<?php _e('Gild Source', 'gild-theme'); ?>">
+          <h2><?php _e( "Illuminating the true skills of developers, so you know who's good." ); ?></h2>
+        </div>
+        <a class="video-link">
+          <img src="<?php bloginfo('template_directory') ?>/img/features-video.jpg" alt="<?php _e( 'Gild Source Interface', 'gild-theme' ); ?>">
+        </a>
+
+      </div>
+    </section>
+
+    <?php
+      get_template_part( 'content', 'page-features-landing' );
+
+      echo bottom_callout();
+
+      get_sidebar('footer-guarantee');
+    ?>
+
+  </div><!-- #content -->
+
+<?php get_footer(); ?>
