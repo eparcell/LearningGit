@@ -1,1 +1,2 @@
 Hello world. from GitHub.
+Hello from Master.
